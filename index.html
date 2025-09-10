@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <title>Veebileht</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Põhinavigatsioon">
+        <a href="#sissejuhatus">Sissejuhatus</a>
+        <a href="#teooria">Teooria</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <h1>Üheleheline õppeveeb</h1>
+    </header>
+    <main id="content">
+      <section id="sissejuhatus">
+        <h2>Sissejuhatus</h2>
+        <p>Mis on HTML?</p>
+        <ul>
+          <li>Elemendid</li>
+          <li>Sildid</li>
+          <li>Hüpertekst</li>
+        </ul>
+        <p>HTMLi on meil vaja veebilehtede loomiseks</p>
+        <img src="images/pilt4.webp" alt="HTML" />
+        <audio controls>
+        <source src="images/audio.wav" type="audio/ogg">
+        <source src="images/audio.wav" type="audio/mpeg">
+        </audio>
+      </section>
+      <section id="teooria">
+        <h2>Teooria</h2>
+        <p>HTML tähendus.</p>
+        <p>HTML on keel, milles märgendatakse veebilehti.</p>
+        <p>HTML loob struktuuri (skeleti), CSS annab välimuse. Standardid tagavad, et kood töötab kõikjal. </p>
+        <p>Veebileht koosneb alati kahest suuremast osast: päisest (<.head>) ja sisust (<.body>). Kõige ülal on deklaratsioon <!.doctype html>, mis ütleb brauserile, et dokument järgib HTML5 standardit. See väldib nn quirks-mode’i, kus brauserid püüavad vana koodi "arvata". Koodi kirjutades ei lisata punkti peale linnukesi.</p>
+        <p>Miks peab style kaust linkima? Kui stiilid on eraldi failis, siis:</p>
+        <ol>
+            <li>Kood on puhtam – HTML sisaldab vaid sisu ja struktuuri, mitte kujundust.</li>
+            <li>Taaskasutus – sama CSS fail saab kujundada mitut HTML lehte.</li>
+            <li>Jõudlus – brauserid saavad CSS-faili vahemällu salvestada ja kiiremini laadida.</li>
+            <li>Hooldatavus – stiile saab muuta ühes kohas ja need rakenduvad kõikjal.</li>
+        </ol>
+      </section>
+      <section id="kujundus">
+        <h2>Kujundus</h2>
+        <p>CSS tähendus.</p>
+        <p>
+          CSS on küljendamisel kasutatav märgistuskeel, milles märgitakse üles
+          peamiselt veebilehtede kujundust.
+        </p>
+        <svg role="img" aria-labelledby="ic-title ic-desc" width="24" height="24" viewBox="0 0 24 24">
+         <title id="ic-title">Info ikoon</title>
+         <desc id="ic-desc">Ringis i-täht</desc>
+         <circle cx="12" cy="12" r="10" fill="currentColor"/>
+         <text x="12" y="16" text-anchor="middle" font-size="12" fill="#0b1220">i</text>
+        </svg>
+        <img src="images/pilt5.png" alt="CSS" />
+      </section>
+      <p>Tere tulemast!</p> 
+      <video controls width="640" height="360" poster="assets/img/video-poster.jpg">
+      <source src="images/video.mp4" type="video/webm">
+      <source src="images/video.mp4" type="video/mp4">
+      <track src="images/video.mp4" kind="captions" srclang="et" label="Eesti" default>
+</video>
+    </main>
+    <img src="images/pilt.jpg" alt="Suur tiiger" />
+    <p class="title">Henri Siimsalu</p>
+    <p>VOCO õpilane</p>
+    <ol>
+      <li>Eeskujulik</li>
+      <li>Motiveeritud</li>
+      <li>Järjepidev</li>
+    </ol>
+    <footer>© 2025</footer>
+  </body>
+</html>

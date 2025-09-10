@@ -1,0 +1,23 @@
+img {
+  width: 200px;
+  height: 200px;
+  justify-items: center;
+}
+p  {
+  font-size: 16px;
+  color: rgb(10, 10, 10);
+}
+h1 {
+  font-size: 26px;
+  color: rgb(10, 10, 10);
+}
+header {
+  background-image: url(../images/pilt3.jpg);
+  display: grid;
+  justify-items: center;
+}
+body {
+  display: grid;
+  background-image: url(../images/pilt2.jpg);
+  justify-items: center;
+}
