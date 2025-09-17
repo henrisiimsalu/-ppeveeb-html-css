@@ -1,16 +1,27 @@
 <!DOCTYPE html>
+  <!-- Veebilehe keel -->
 <html lang="et">
   <head>
     <title>Veebileht</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+         <!-- Skip-link -->
+    <a href="#content" class="skip-link">Liigu sisu juurde</a>
+         <!-- Hero-pilt -->
+  <section id="hero">
+    <picture>
+      <source srcset="https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_23-2150359353.jpg" type="image/webp">
+      <img src="images/pilt6.jpg" alt="Õppimise illustratsioon" loading="lazy">
+    </picture>
+  </section>
     <header>
       <nav aria-label="Põhinavigatsioon">
         <a href="#sissejuhatus">Sissejuhatus</a>
         <a href="#teooria">Teooria</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
+         <!-- Esimene pealkiri -->
       <h1>Üheleheline õppeveeb</h1>
     </header>
     <main id="content">
@@ -30,6 +41,7 @@
         </audio>
       </section>
       <section id="teooria">
+           <!-- Teine pealkiri ning paragrahvid -->
         <h2>Teooria</h2>
         <p>HTML tähendus.</p>
         <p>HTML on keel, milles märgendatakse veebilehti.</p>
@@ -65,13 +77,24 @@
       <track src="images/video.mp4" kind="captions" srclang="et" label="Eesti" default>
 </video>
     </main>
+    <!-- GRID paigutus: omadused -->
     <img src="images/pilt.jpg" alt="Suur tiiger" />
-    <p class="title">Henri Siimsalu</p>
-    <p>VOCO õpilane</p>
-    <ol>
-      <li>Eeskujulik</li>
-      <li>Motiveeritud</li>
-      <li>Järjepidev</li>
+    <section id="omadused" class="omadused">
+      <h2>Minu omadused</h2>
+      <div class="kaart">Eeskujulik</div>
+      <div class="kaart">Motiveeritud</div>
+      <div class="kaart">Järjepidev</div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p class="title">Henri Siimsalu</p>
+      <p>VOCO õpilane</p>
+      <ul>
+        <li>Email: <a href="henri.siimsalu@voco.ee">henri.siimsalu@voco.ee</a></li>
+        <li>Asukoht: Tartu</li>
+      </ul>
+    </section>
     </ol>
     <footer>© 2025</footer>
   </body>
