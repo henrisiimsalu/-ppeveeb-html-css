@@ -13,10 +13,46 @@ body {
   padding: 1em;
 }
 
+#hero {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 60vh;        
+  text-align: center;
+}
+
+#hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  text-align: center;     
+  margin-bottom: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #222; 
+  color: #fff;            
+}
 
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  background-size: cover;
+  background-color: antiquewhite;
 }
 
 h2 {
@@ -35,18 +71,6 @@ nav {
   gap: 1em;
   margin-bottom: 1em;
   flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: darkblue;
-  padding: 0.25em 0.5em;
-}
-
-nav a:hover,
-nav a:focus-visible {
-  background-color: lightblue;
-  border-radius: 4px;
 }
 
 main {
@@ -130,7 +154,7 @@ footer {
 .skip-link {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 40%;
   background: rgb(26, 51, 190);
   color: rgb(255, 255, 255);
   padding: 0.5em;
@@ -139,7 +163,7 @@ footer {
 
 .skip-link:focus {
   top: 0px;
-  left: 200px;
+  left: 50%;
 }
 
 
