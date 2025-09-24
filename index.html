@@ -1,29 +1,38 @@
 <!DOCTYPE html>
-  <!-- Veebilehe keel -->
+<!-- Veebilehe keel -->
 <html lang="et">
   <head>
     <title>Veebileht</title>
     <link rel="stylesheet" href="css/style.css" />
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-         <!-- Skip-link -->
+    <!-- Skip-link -->
     <a href="#content" class="skip-link">Liigu sisu juurde</a>
-         <!-- Hero-pilt -->
-  <section id="hero">
-    <picture>
-      <source srcset="https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_23-2150359353.jpg" type="image/webp">
-      <img src="images/pilt6.jpg" alt="Õppimise illustratsioon" loading="lazy">
-    </picture>
-  </section>
+    <!-- Hero-pilt -->
+    <section id="hero">
+      <picture>
+        <source
+          srcset="
+            https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_23-2150359353.jpg
+          "
+          type="image/webp"
+        />
+        <img
+          src="images/pilt6.jpg"
+          alt="Õppimise illustratsioon"
+          loading="lazy"
+        />
+      </picture>
+    </section>
     <header>
       <nav aria-label="Põhinavigatsioon">
         <a href="#sissejuhatus">Sissejuhatus</a>
         <a href="#teooria">Teooria</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
-         <!-- Esimene pealkiri -->
+      <!-- Esimene pealkiri -->
       <h1>Üheleheline õppeveeb</h1>
     </header>
     <main id="content">
@@ -38,70 +47,127 @@
         <p>HTMLi on meil vaja veebilehtede loomiseks</p>
         <img src="images/pilt4.webp" alt="HTML" />
         <audio controls>
-        <source src="images/audio.wav" type="audio/ogg">
-        <source src="images/audio.wav" type="audio/mpeg">
+          <source src="images/audio.wav" type="audio/ogg" />
+          <source src="images/audio.wav" type="audio/mpeg" />
         </audio>
       </section>
       <section id="teooria">
-           <!-- Teine pealkiri ning paragrahvid -->
+        <!-- Teine pealkiri ning paragrahvid -->
         <h2>Teooria</h2>
         <p>HTML tähendus.</p>
         <p>HTML on keel, milles märgendatakse veebilehti.</p>
-        <p>HTML loob struktuuri (skeleti), CSS annab välimuse. Standardid tagavad, et kood töötab kõikjal. </p>
-        <p>Veebileht koosneb alati kahest suuremast osast: päisest head ja sisust body. Kõige ülal on deklaratsioon doctype html, mis ütleb brauserile, et dokument järgib HTML5 standardit. See väldib nn quirks-mode’i, kus brauserid püüavad vana koodi "arvata". Koodi kirjutades ei lisata punkti peale linnukesi.</p>
-        <p>Miks peab style kaust linkima? Kui stiilid on eraldi failis, siis:</p>
+        <p>
+          HTML loob struktuuri (skeleti), CSS annab välimuse. Standardid
+          tagavad, et kood töötab kõikjal.
+        </p>
+        <p>
+          Veebileht koosneb alati kahest suuremast osast: päisest head ja sisust
+          body. Kõige ülal on deklaratsioon doctype html, mis ütleb brauserile,
+          et dokument järgib HTML5 standardit. See väldib nn quirks-mode’i, kus
+          brauserid püüavad vana koodi "arvata". Koodi kirjutades ei lisata
+          punkti peale linnukesi.
+        </p>
+        <p>
+          Miks peab style kaust linkima? Kui stiilid on eraldi failis, siis:
+        </p>
         <ol>
-            <li>Kood on puhtam – HTML sisaldab vaid sisu ja struktuuri, mitte kujundust.</li>
-            <li>Taaskasutus – sama CSS fail saab kujundada mitut HTML lehte.</li>
-            <li>Jõudlus – brauserid saavad CSS-faili vahemällu salvestada ja kiiremini laadida.</li>
-            <li>Hooldatavus – stiile saab muuta ühes kohas ja need rakenduvad kõikjal.</li>
+          <li>
+            Kood on puhtam – HTML sisaldab vaid sisu ja struktuuri, mitte
+            kujundust.
+          </li>
+          <li>Taaskasutus – sama CSS fail saab kujundada mitut HTML lehte.</li>
+          <li>
+            Jõudlus – brauserid saavad CSS-faili vahemällu salvestada ja
+            kiiremini laadida.
+          </li>
+          <li>
+            Hooldatavus – stiile saab muuta ühes kohas ja need rakenduvad
+            kõikjal.
+          </li>
         </ol>
       </section>
       <section id="kujundus">
         <h2>Kujundus</h2>
         <p>CSS tähendus.</p>
         <p>
-          CSS (Cascading Style Sheets) on stiililehtede keel, mida kasutatakse veebilehtede kujundamiseks ja paigutuse määramiseks.
+          CSS (Cascading Style Sheets) on stiililehtede keel, mida kasutatakse
+          veebilehtede kujundamiseks ja paigutuse määramiseks.
         </p>
         <ul>
-          <li>HTML ja CSS koos – HTML annab veebilehele sisu (nt tekst, pildid, lingid), CSS aga määrab, kuidas see sisu välja näeb (värvid, fondid, vahed, suurused).</li>
-          <li>Selektorid ja omadused – CSS reeglid koosnevad selektorist (nt p lõigule) ja omadustest (nt color: red;), mis kirjeldavad, milline stiil rakendub.</li>
-          <li>Kaskaad ja pärimine – kui ühele elemendile rakenduvad mitu erinevat stiili, otsustab CSS-i kaskaadireegel, milline neist jääb kehtima; mõningaid omadusi saab ka vanematelt elementidelt pärida (nt tekstivärv).</li>
+          <li>
+            HTML ja CSS koos – HTML annab veebilehele sisu (nt tekst, pildid,
+            lingid), CSS aga määrab, kuidas see sisu välja näeb (värvid, fondid,
+            vahed, suurused).
+          </li>
+          <li>
+            Selektorid ja omadused – CSS reeglid koosnevad selektorist (nt p
+            lõigule) ja omadustest (nt color: red;), mis kirjeldavad, milline
+            stiil rakendub.
+          </li>
+          <li>
+            Kaskaad ja pärimine – kui ühele elemendile rakenduvad mitu erinevat
+            stiili, otsustab CSS-i kaskaadireegel, milline neist jääb kehtima;
+            mõningaid omadusi saab ka vanematelt elementidelt pärida (nt
+            tekstivärv).
+          </li>
         </ul>
-        <svg role="img" aria-labelledby="ic-title ic-desc" width="24" height="24" viewBox="0 0 24 24">
-         <title id="ic-title">Info ikoon</title>
-         <desc id="ic-desc">Ringis VOCO</desc>
-         <circle cx="12" cy="12" r="10" fill="currentColor"/>
-         <text x="12" y="14" text-anchor="middle" font-size="6" fill="#0b1220">VOCO</text>
+        <svg
+          role="img"
+          aria-labelledby="ic-title ic-desc"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <title id="ic-title">Info ikoon</title>
+          <desc id="ic-desc">Ringis VOCO</desc>
+          <circle cx="12" cy="12" r="10" fill="currentColor" />
+          <text x="12" y="14" text-anchor="middle" font-size="6" fill="#0b1220">
+            VOCO
+          </text>
         </svg>
         <img src="images/pilt5.png" alt="CSS" />
       </section>
-      <h2>Illustreeriv video häkkerist</h2> 
-      <video controls width="640" height="360" poster="assets/img/video-poster.jpg">
-      <source src="images/video.mp4" type="video/webm">
-      <source src="images/video.mp4" type="video/mp4">
-      <track src="images/video.mp4" kind="captions" srclang="et" label="Eesti" default>
-</video>
-    </main>
-    <!-- GRID paigutus: omadused -->
-    <img src="images/pilt.jpg" alt="Suur tiiger" />
-    <h2>Minu omadused</h2>
-    <section id="omadused" class="omadused">
-      <div class="kaart">Eeskujulik</div>
-      <div class="kaart">Motiveeritud</div>
-      <div class="kaart">Järjepidev</div>
-    </section>
+      <section>
+        <h2>Illustreeriv video häkkerist</h2>
+        <video
+          controls
+          width="640"
+          height="360"
+          poster="assets/img/video-poster.jpg"
+        >
+          <source src="images/video.mp4" type="video/webm" />
+          <source src="images/video.mp4" type="video/mp4" />
+          <track
+            src="images/video.mp4"
+            kind="captions"
+            srclang="et"
+            label="Eesti"
+            default
+          />
+        </video>
+      </section>
+      <!-- GRID paigutus: omadused -->
 
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p class="title">Henri Siimsalu</p>
-      <p>VOCO õpilane</p>
-      <ul>
-        <li>Email: <a href="henri.siimsalu@voco.ee">henri.siimsalu@voco.ee</a></li>
-        <li>Asukoht: Tartu</li>
-      </ul>
-    </section>
-    </ol>
+      <section id="omadused" class="omadused">
+        <img src="images/pilt.jpg" alt="Suur tiiger" />
+        <h2>Minu omadused</h2>
+        <div class="kaart">Eeskujulik</div>
+        <div class="kaart">Motiveeritud</div>
+        <div class="kaart">Järjepidev</div>
+      </section>
+
+      <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p class="title">Henri Siimsalu</p>
+        <p>VOCO õpilane</p>
+        <ul>
+          <li>
+            Email: <a href="henri.siimsalu@voco.ee">henri.siimsalu@voco.ee</a>
+          </li>
+          <li>Asukoht: Tartu</li>
+        </ul>
+      </section>
+    </main>
     <footer>© 2025</footer>
   </body>
 </html>
